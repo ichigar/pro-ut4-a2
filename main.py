@@ -14,7 +14,7 @@ class Main:
         self.main_w.title("Gestión de recetas")
         #self.main_w.columnconfigure(0, minsize=250)
         #self.main_w.rowconfigure([0, 1, 2], minsize=100)
-        self.main_w.minsize(200,320)
+        self.main_w.minsize(340,320)
 
         self.lbl1 = Label(self.main_w, text="Gestión de recetas", font=("Arial Bold", 20))
         self.lbl1.grid(column=0, row=0, padx=25, pady=5)

@@ -10,7 +10,7 @@ class MostrarReceta:
     def _iniciar(self):
         self.mostrar_w = Tk()
         self.mostrar_w.title("Mostrar Receta")
-        self.mostrar_w.geometry("450x300")
+        self.mostrar_w.minsize(440, 200)
         
         self.lbl = Label(self.mostrar_w, text="Mostrar Receta\n", font=("Arial Bold", 20))
         self.lbl.grid(column=0, row=0, padx=5, pady=5)

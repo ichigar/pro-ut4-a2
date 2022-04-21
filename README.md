@@ -52,7 +52,34 @@ Tendremos que elaborar una interfaz gráfica para dicha aplicación con las sigu
     * Eliminar receta
         * Se nos pregunta el nombre de la receta y si existe se elimina del fichero.
 
-Para elaborar la interfaz gráfica con **tkinter** nos podemos puedes partir del [siguiente código](https://github.com/ichigar/pro/tree/main/ut4/recursos/ut4-a2/recetas) para elaborar la interfaz de nuestra aplicación
+Para elaborar la interfaz gráfica con **tkinter** nos podemos puedes partir del [siguiente código](https://github.com/ichigar/pro-ut4-a2) para elaborar la interfaz de nuestra aplicación.
+
+Puedes clonar el código en tu equipo ejecutando:
+
+```bash
+$ git clone https://github.com/ichigar/pro-ut4-a2.git
+```
+
+## Complementario
+
+Añadir las siguientes mejoras a las ventanas y controles:
+
+* No se pueda hacer el tamaño de la ventana tan pequeño que alguno de los elementos de la misma se oculten
+* Mejorar la apariencia de forma que los elementos estén alineados, haya padding entre ellos
+
+
+![](https://i.imgur.com/WDfA7Qm.png)
+
+
+* En las ventanas que tengan un único botón definir el **evento* en el que pulsar la tecla `<ENTER>` sea equivalente a pusar el botón
+* En las ventanas que incluyen campos de entrada el primero de los mismos obtenga el **foco** al abrirse la ventana.
+* Cuando se abra la ventana de información que muestra el resultado se cierre la ventana desde la que se invocó para que la alerta no quede por detrás
+
+De todo lo anterior hay ejemplo en el [siguiente cócódigo base que se adjunta a la actividad](https://github.com/ichigar/pro-ut4-a2)
+
+## Producto
+
+Archivos del proyecto comprimidos en un zip.
 
 ## Producto
 
