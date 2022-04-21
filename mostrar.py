@@ -10,10 +10,11 @@ class MostrarReceta:
     def _iniciar(self):
         self.mostrar_w = Tk()
         self.mostrar_w.title("Mostrar Receta")
-        self.mostrar_w.minsize(440, 200)
+        self.mostrar_w.minsize(400, 150)
+        self.mostrar_w.resizable(width=False, height=False)
         
-        self.lbl = Label(self.mostrar_w, text="Mostrar Receta\n", font=("Arial Bold", 20))
-        self.lbl.grid(column=0, row=0, padx=5, pady=5)
+        self.lbl = Label(self.mostrar_w, text="Mostrar Receta", font=("Arial Bold", 20))
+        self.lbl.grid(column=0, row=0, columnspan=2, padx=5, pady=5)
 
         
         self.lbl_n = Label(self.mostrar_w, text="Nombre de la receta:", font=("Arial", 12))    
