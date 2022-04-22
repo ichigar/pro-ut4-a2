@@ -35,17 +35,13 @@ class MostrarReceta:
     def _form1_enviar(self, event = ""):        # bind pasa evento como parámetro
         nombre = self.txt_n.get()
         if nombre == "":
-            messagebox.showerror("error", "No se ha introducido ningún valor")
-            # Ponemos la ventana de mostrar receta encima
-            self.mostrar_w.attributes('-topmost', True)
-            self.mostrar_w.update()
+            messagebox.showerror("error", "No se ha introducido ningún valor", parent = self.mostrar_w)
+            
         else:
             receta = Receta()
             text_receta = receta.mostrar_receta(nombre)
             if not text_receta:
-
-                self.mostrar_w.destroy()
-                messagebox.showerror("error", "La receta no existe")
+                messagebox.showerror("error", "La receta no existe", parent = self.mostrar_w)
                 
             else:
                 self.mostrar_w.destroy()
