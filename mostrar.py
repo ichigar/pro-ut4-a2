@@ -35,6 +35,7 @@ class MostrarReceta:
     def _form1_enviar(self, event = ""):        # bind pasa evento como parámetro
         nombre = self.txt_n.get()
         if nombre == "":
+            # Ponemos atributo parent para que el mensaje se muestre encima de la ventana padre
             messagebox.showerror("error", "No se ha introducido ningún valor", parent = self.mostrar_w)
             
         else:
