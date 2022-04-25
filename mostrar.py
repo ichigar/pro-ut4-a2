@@ -8,7 +8,9 @@ class MostrarReceta:
         self._iniciar()
         
     def _iniciar(self):
-        self.mostrar_w = tk.Toplevel()
+        # Se crea una ventana hija. No puede haber dos instancias de Tk() en ejecución
+        self.mostrar_w = tk.Toplevel()  
+        
         self.mostrar_w.title("Mostrar Receta")
         self.mostrar_w.minsize(400, 150)
         self.mostrar_w.resizable(width=False, height=False)
@@ -39,7 +41,7 @@ class MostrarReceta:
             
         else:
             receta = Receta()
-            text_receta = receta.mostrar_receta(nombre)
+            text_receta = receta.mostrar_receta(nombre)   # Obtenemos información de la receta
             if not text_receta:
                 messagebox.showerror("error", "La receta no existe", parent = self.mostrar_w)
                 
